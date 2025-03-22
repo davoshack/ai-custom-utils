@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-pip install git+https://github.com/yourusername/my_library.git
+pip install git+https://github.com/davoshack/ai-custom-utils.git
 ```
 
 ## Usage
