@@ -34,13 +34,18 @@ def get_eleven_api_key():
 
 def get_livekit_api_key():
     load_env()
-    eleven_api_key = os.getenv("LIVEKIT_API_KEY")
-    return eleven_api_key
+    livekit_api_key = os.getenv("LIVEKIT_API_KEY")
+    return livekit_api_key
 
 def get_anthropic_api_key():
     load_env()
-    eleven_api_key = os.getenv("ANTHROPIC_API_KEY")
-    return eleven_api_key
+    anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+    return anthropic_api_key
+
+def get_deepgram_api_key():
+    load_env()
+    deepgram_api_key = os.getenv("DEEPGRAM_API_KEY")
+    return deepgram_api_key
 
 def get_langchain_api_key():
     load_env()
