@@ -32,6 +32,16 @@ def get_eleven_api_key():
     eleven_api_key = os.getenv("ELEVEN_API_KEY")
     return eleven_api_key
 
+def get_livekit_api_key():
+    load_env()
+    eleven_api_key = os.getenv("LIVEKIT_API_KEY")
+    return eleven_api_key
+
+def get_anthropic_api_key():
+    load_env()
+    eleven_api_key = os.getenv("ANTHROPIC_API_KEY")
+    return eleven_api_key
+
 def get_langchain_api_key():
     load_env()
     langchain_endpoint = os.getenv("LANGCHAIN_API_KEY")
@@ -61,9 +71,7 @@ def get_google_cse_id():
     load_env()
     google_cse_id = os.getenv("GOOGLE_CSE_ID")
     return google_cse_id
-
-def print_response(text):
-    display(Markdown(text))
+    
 
 def print_response(text):
     display(Markdown(text))
