@@ -47,6 +47,11 @@ def get_deepgram_api_key():
     deepgram_api_key = os.getenv("DEEPGRAM_API_KEY")
     return deepgram_api_key
 
+def get_groq_api_key():
+    load_env()
+    groq_api_key = os.getenv("GROQ_API_KEY")
+    return groq_api_key
+
 def get_langchain_api_key():
     load_env()
     langchain_endpoint = os.getenv("LANGCHAIN_API_KEY")
