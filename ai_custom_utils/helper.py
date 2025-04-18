@@ -81,7 +81,21 @@ def get_google_cse_id():
     load_env()
     google_cse_id = os.getenv("GOOGLE_CSE_ID")
     return google_cse_id
-    
+
+def get_trello_api_key():
+    load_env()
+    trello_api_key = os.getenv("TRELLO_API_KEY")
+    return trello_api_key
+
+def get_trello_api_secret():
+    load_env()
+    trello_api_secret = os.getenv("TRELLO_API_SECRET")
+    return trello_api_secret
+   
+def get_trello_board_id():
+    load_env()
+    trello_board_id = os.getenv("TRELLO_BOARD_ID")
+    return trello_board_id 
 
 def print_response(text):
     display(Markdown(text))
