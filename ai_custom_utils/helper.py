@@ -97,5 +97,11 @@ def get_trello_board_id():
     trello_board_id = os.getenv("TRELLO_BOARD_ID")
     return trello_board_id 
 
+def get_serper_api_key():
+    load_env()
+    serper_api_key = os.getenv("SERPER_API_KEY")
+    return serper_api_key
+    
+
 def print_response(text):
     display(Markdown(text))
