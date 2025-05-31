@@ -2,11 +2,11 @@ from colorama import Fore
 from dotenv import load_dotenv
 from groq import Groq
 
-from agentic_patterns.utils.completions import build_prompt_structure
-from agentic_patterns.utils.completions import completions_create
-from agentic_patterns.utils.completions import FixedFirstChatHistory
-from agentic_patterns.utils.completions import update_chat_history
-from agentic_patterns.utils.logging import fancy_step_tracker
+from ..utils.completions import build_prompt_structure
+from ..utils.completions import completions_create
+from ..utils.completions import FixedFirstChatHistory
+from ..utils.completions import update_chat_history
+from ..utils.logging import fancy_step_tracker
 
 load_dotenv()
 
