@@ -127,7 +127,7 @@ def get_serper_api_key():
 
 def get_mlflow_tracking_uri():
     load_dotenv()
-    mlflow_tracking_uri = os.getenv("DLAI_LOCAL_URL")
+    mlflow_tracking_uri = os.getenv("DLAI_LOCAL_URL").format(port=8080)
     return mlflow_tracking_uri
     
 
