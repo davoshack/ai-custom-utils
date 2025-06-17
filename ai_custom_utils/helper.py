@@ -134,7 +134,11 @@ def get_huggingface_api_key():
     load_env()
     hf_api_key = os.getenv("HUGGINGFACE_API_KEY")
     return hf_api_key
-    
+   
+def get_e2b_api_key(): 
+    load_env()
+    e2b_api_key = os.getenv("E2B_API_KEY")
+    return e2b_api_key
 
 def print_response(text):
     display(Markdown(text))
