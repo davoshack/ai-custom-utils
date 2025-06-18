@@ -140,5 +140,20 @@ def get_e2b_api_key():
     e2b_api_key = os.getenv("E2B_API_KEY")
     return e2b_api_key
 
+def get_llama_api_key():
+    load_env()
+    llama_api_key = os.getenv("LLAMA_API_KEY")
+    return llama_api_key
+
+def get_llama_base_url():
+    load_env()
+    llama_base_url = os.getenv("LLAMA_BASE_URL")
+    return llama_base_url
+
+def get_together_api_key():
+    load_env()
+    together_api_key = os.getenv("TOGETHER_API_KEY")
+    return together_api_key
+
 def print_response(text):
     display(Markdown(text))
