@@ -155,5 +155,10 @@ def get_together_api_key():
     together_api_key = os.getenv("TOGETHER_API_KEY")
     return together_api_key
 
+def get_github_api_key():
+    load_env()
+    github_api_key = os.getenv("GITHUB_API_KEY")
+    return github_api_key
+
 def print_response(text):
     display(Markdown(text))
