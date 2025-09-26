@@ -170,5 +170,10 @@ def get_phoenix_base_url():
     phoenix_base_url = os.getenv("PHOENIX_BASE_URL")
     return phoenix_base_url
 
+def get_tavily_api_key():
+    load_env()
+    tavily_api_key = os.getenv("TAVILY_API_KEY")
+    return tavily_api_key
+
 def print_response(text):
     display(Markdown(text))
