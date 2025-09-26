@@ -160,5 +160,15 @@ def get_github_api_key():
     github_api_key = os.getenv("GITHUB_API_KEY")
     return github_api_key
 
+def get_phoenix_api_key():
+    load_env()
+    phoenix_api_key = os.getenv("PHOENIX_API_KEY")
+    return phoenix_api_key
+
+def get_phoenix_base_url():
+    load_env()
+    phoenix_base_url = os.getenv("PHOENIX_BASE_URL")
+    return phoenix_base_url
+
 def print_response(text):
     display(Markdown(text))
